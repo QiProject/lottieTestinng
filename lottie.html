@@ -7,8 +7,15 @@
     <script src="lottie.min.js" type="text/javascript"></script>
 </head>
 <body>
+    <style>
+        #dom {
+            background-color: black;
+            <!-- height: 400px; -->
+            <!-- width: 100px; -->
+        }
+    </style>
 
-    <div id="dom"></div>
+    <div id="dom" width="300px" height="200px"></div>
     <script>
         var el = document.getElementById("dom");
         lottie.loadAnimation({
@@ -16,7 +23,7 @@
             renderer: 'svg',
             loop: true,
             autoplay: true,
-            path: 'data.json' // the path to the animation json
+            path: 'https://raw.githubusercontent.com/QiProject/lottieTestinng/master/data.json' // the path to the animation json
           });
     </script>
 
